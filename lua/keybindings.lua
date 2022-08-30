@@ -6,8 +6,8 @@ local opt = {noremap = true, silent = true }
 
 map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
-map("n", "<C-u>", "9k", opt)
-map("n", "<C-d>", "9j", opt)
+map("n", "<C-k>", "9k", opt)
+map("n", "<C-j>", "9j", opt)
 
 map('n', 'te', ':NvimTreeToggle<CR>', opt)
 map("n", "tt", ":ToggleTerm<CR>", opt)
