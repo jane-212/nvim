@@ -13,6 +13,8 @@ map('n', 'te', ':NvimTreeToggle<CR>', opt)
 map("n", "tt", ":ToggleTerm<CR>", opt)
 map("n", "gg", ":GitUi<CR>", opt)
 map("n", "fd", ":Bdelete<CR>", opt)
+map("n", "md", ":MarkdownPreview<CR>", opt)
+map("n", "ms", ":MarkdownPreviewStop<CR>", opt)
 
 map("n", "<A-h>", "<C-w>h", opt)
 map("n", "<A-j>", "<C-w>j", opt)
