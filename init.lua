@@ -26,6 +26,13 @@ require("bufferline").setup {
 
 require('nvim-web-devicons').get_icons()
 
+local on_attach = function(client, bufnr)
+  local bufopts = { noremap=true, silent=true, buffer=bufnr }
+  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
+  vim.keymap.set('n', 'gh', vim.lsp.buf.hover, bufopts)
+  vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
+end
+
 vim.o.background = "dark"
 
 vim.o.dir = 'c:\\Temp'
@@ -44,31 +51,19 @@ require('rust-tools').setup{
     },
 
     server = {
+        on_attach = on_attach,
         settings = {
             ["rust-analyzer"] = {
                 checkOnSave = {
                     command = "clippy"
                 },
-            }
-        }
+            },
+        },
     },
 }
 
-require('nvim-lsp-installer').setup{}
-
 local nvim_lsp = require('lspconfig')
 local util = require "lspconfig/util"
-
-local on_attach = function(client, bufnr)
-  local bufopts = { noremap=true, silent=true, buffer=bufnr }
-  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
-  vim.keymap.set('n', 'gh', vim.lsp.buf.hover, bufopts)
-  vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-end
-
-nvim_lsp.rust_analyzer.setup{
-  on_attach = on_attach,
-}
 
 nvim_lsp.gopls.setup {
   on_attach = on_attach,
