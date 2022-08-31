@@ -40,47 +40,15 @@ end
 
 vim.o.background = "dark"
 
-require('rust-tools').setup{
-    tools = {
-        runnables = {
-            use_telescope = true
-        },
-        inlay_hints = {
-            auto = true,
-            show_parameter_hints = false,
-            parameter_hints_prefix = "",
-            other_hints_prefix = "",
-        },
-    },
-
-    server = {
-        on_attach = on_attach,
-        settings = {
-            ["rust-analyzer"] = {
-                checkOnSave = {
-                    command = "clippy"
-                },
-            },
-        },
-    },
-}
-
 local nvim_lsp = require('lspconfig')
 local util = require "lspconfig/util"
 
+nvim_lsp.rust_analyzer.setup {
+  on_attach = on_attach,
+}
+
 nvim_lsp.gopls.setup {
   on_attach = on_attach,
-  cmd = {"gopls", "serve"},
-  filetypes = {"go", "gomod"},
-  root_dir = util.root_pattern("go.work", "go.mod", ".git"),
-  settings = {
-    gopls = {
-      analyses = {
-        unusedparams = true,
-      },
-      staticcheck = true,
-    },
-  },
 }
 
 function go_org_imports(wait_ms)
