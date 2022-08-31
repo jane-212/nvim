@@ -1,3 +1,5 @@
+vim.o.dir = 'c:\\Temp'
+
 require('plugins')
 require('keybindings')
 
@@ -8,6 +10,9 @@ require('nvim-tree').setup{
 }
 
 vim.opt.termguicolors = true
+
+vim.g.airline_powerline_fonts = 1
+
 require("bufferline").setup {
   options = {
     diagnostics = "nvim_lsp",
@@ -34,8 +39,6 @@ local on_attach = function(client, bufnr)
 end
 
 vim.o.background = "dark"
-
-vim.o.dir = 'c:\\Temp'
 
 require('rust-tools').setup{
     tools = {

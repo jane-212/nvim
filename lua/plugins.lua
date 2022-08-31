@@ -3,6 +3,8 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
+  use 'vim-airline/vim-airline'
+
   use {
     "ellisonleao/gruvbox.nvim",
     requires = {"rktjmp/lush.nvim"}
@@ -50,8 +52,6 @@ return require('packer').startup(function(use)
     tag = 'v2.*',
   }
 
-  use 'vim-airline/vim-airline'
-
   use 'jiangmiao/auto-pairs'
 
   use 'xiyaowong/nvim-transparent'
@@ -60,4 +60,6 @@ return require('packer').startup(function(use)
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
   })
+
+  use 'preservim/tagbar'
 end)

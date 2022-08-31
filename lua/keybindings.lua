@@ -10,6 +10,7 @@ map("n", "<C-k>", "9k", opt)
 map("n", "<C-j>", "9j", opt)
 
 map('n', 'te', ':NvimTreeToggle<CR>', opt)
+map('n', 'tb', ':TagbarToggle<CR>', opt)
 map("n", "tt", ":ToggleTerm<CR>", opt)
 map("n", "gg", ":GitUi<CR>", opt)
 map("n", "fd", ":Bdelete<CR>", opt)

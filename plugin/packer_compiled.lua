@@ -164,6 +164,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
   },
+  tagbar = {
+    loaded = true,
+    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tagbar",
+    url = "https://github.com/preservim/tagbar"
+  },
   ["toggleterm.nvim"] = {
     loaded = true,
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
