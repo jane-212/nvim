@@ -30,9 +30,10 @@ map("i", "<A-h>", "<Left>", opt)
 map("i", "<A-j>", "<Down>", opt)
 map("i", "<A-k>", "<Up>", opt)
 map("i", "<A-l>", "<Right>", opt)
+map("i", "<A-o>", "<ESC>o", opt)
 
 map("i", "<C-e>", "<ESC>I", opt)
 map("i", "<C-b>", "<ESC>A", opt)
-map("i", "<C-o>", "<ESC>o", opt)
+map("i", "<C-o>", "<ESC>", opt)
 
 map("i", "<ESC>", "<ESC>:w<CR>", opt)
