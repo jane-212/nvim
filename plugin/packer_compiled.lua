@@ -179,6 +179,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-racer"] = {
+    loaded = true,
+    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-racer",
+    url = "https://github.com/racer-rust/vim-racer"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip",

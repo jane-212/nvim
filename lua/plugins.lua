@@ -62,4 +62,6 @@ return require('packer').startup(function(use)
   })
 
   use 'preservim/tagbar'
+
+  use 'racer-rust/vim-racer'
 end)
