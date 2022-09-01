@@ -40,3 +40,5 @@ map("i", "<C-o>", "<ESC>:w<CR>", opt)
 map("i", "<ESC>", "<ESC>:w<CR>", opt)
 
 map("v", "<C-o>", "<ESC>", opt)
+
+map("t", "<ESC>", "<C-\\><C-n>", opt)
