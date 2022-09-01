@@ -64,4 +64,6 @@ return require('packer').startup(function(use)
   use 'preservim/tagbar'
 
   use 'racer-rust/vim-racer'
+
+  use 'simrat39/rust-tools.nvim'
 end)

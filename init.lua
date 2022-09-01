@@ -43,8 +43,27 @@ vim.o.background = "dark"
 local nvim_lsp = require('lspconfig')
 local util = require "lspconfig/util"
 
-nvim_lsp.rust_analyzer.setup {
-  on_attach = on_attach,
+require('rust-tools').setup{
+    tools = {
+        autoSetHints = true,
+        hover_with_actions = true,
+        inlay_hints = {
+            show_parameter_hints = false,
+            parameter_hints_prefix = "",
+            other_hints_prefix = "",
+        },
+    },
+
+    server = {
+        on_attach = on_attach,
+        settings = {
+            ["rust-analyzer"] = {
+                checkOnSave = {
+                    command = "clippy"
+                },
+            }
+        }
+    },
 }
 
 nvim_lsp.gopls.setup {
