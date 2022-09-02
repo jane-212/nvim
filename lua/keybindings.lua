@@ -18,6 +18,9 @@ map("n", "fd", ":Bdelete<CR>", opt)
 map("n", "md", ":MarkdownPreview<CR>", opt)
 map("n", "ms", ":MarkdownPreviewStop<CR>", opt)
 
+map("n", "<Leader>y", "\"+y", opt)
+map("n", "<Leader>p", "\"+p", opt)
+
 map("n", "<A-h>", "<C-w>h", opt)
 map("n", "<A-j>", "<C-w>j", opt)
 map("n", "<A-k>", "<C-w>k", opt)

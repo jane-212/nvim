@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  rainbow = {
+    loaded = true,
+    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rainbow",
+    url = "https://github.com/luochen1990/rainbow"
+  },
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rust-tools.nvim",

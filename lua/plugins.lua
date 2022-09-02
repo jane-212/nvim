@@ -66,4 +66,6 @@ return require('packer').startup(function(use)
   use 'racer-rust/vim-racer'
 
   use 'simrat39/rust-tools.nvim'
+
+  use 'luochen1990/rainbow'
 end)

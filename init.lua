@@ -13,6 +13,8 @@ vim.opt.termguicolors = true
 
 vim.g.airline_powerline_fonts = 1
 
+vim.g.rainbow_active = 1
+
 require("bufferline").setup {
   options = {
     diagnostics = "nvim_lsp",
@@ -31,6 +33,11 @@ require("bufferline").setup {
 
 require('nvim-web-devicons').get_icons()
 
+vim.o.background = "dark"
+
+local nvim_lsp = require('lspconfig')
+local util = require "lspconfig/util"
+
 local on_attach = function(client, bufnr)
   local bufopts = { noremap=true, silent=true, buffer=bufnr }
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
@@ -38,12 +45,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
 end
 
-vim.o.background = "dark"
-
-local nvim_lsp = require('lspconfig')
-local util = require "lspconfig/util"
-
-require('rust-tools').setup{
+require("rust-tools").setup{
     tools = {
         autoSetHints = true,
         hover_with_actions = true,
