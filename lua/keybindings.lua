@@ -25,6 +25,8 @@ map("n", "<A-h>", "<C-w>h", opt)
 map("n", "<A-j>", "<C-w>j", opt)
 map("n", "<A-k>", "<C-w>k", opt)
 map("n", "<A-l>", "<C-w>l", opt)
+map("n", "<A-e>", "$", opt)
+map("n", "<A-b>", "0", opt)
 
 map("n", "sv", ":vsp<CR>", opt)
 map("n", "sh", ":sp<CR>", opt)
@@ -47,5 +49,3 @@ map("i", "<ESC>", "<ESC>:w<CR>", opt)
 map("v", "<C-o>", "<ESC>", opt)
 
 map("t", "<C-o>", "<C-\\><C-n>", opt)
-
-map("t", "<ESC>", "<C-\\><C-n>", opt)
