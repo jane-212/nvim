@@ -11,8 +11,6 @@ require('nvim-tree').setup{
 
 vim.opt.termguicolors = true
 
-vim.g.airline_powerline_fonts = 1
-
 vim.g.rainbow_active = 1
 
 require("bufferline").setup {
