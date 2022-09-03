@@ -1,17 +1,26 @@
 vim.o.dir = 'c:\\Temp'
+vim.opt.termguicolors = true
+vim.g.rainbow_active = 1
+vim.o.background = "dark"
 
 require('plugins')
 require('keybindings')
+
+vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[set expandtab]])
+vim.cmd([[set tabstop=4]])
+vim.cmd([[set shiftwidth=4]])
+vim.cmd([[set number]])
+vim.cmd([[autocmd BufWritePre *.go lua go_org_imports()]])
+vim.cmd([[autocmd FileType go setlocal omnifunc=v:lua.vim.lsp.omnifunc]])
+
+require('nvim-web-devicons').get_icons()
 
 require('nvim-tree').setup{
   view = {
     hide_root_folder = true,
   }, 
 }
-
-vim.opt.termguicolors = true
-
-vim.g.rainbow_active = 1
 
 require("bufferline").setup {
   options = {
@@ -28,10 +37,6 @@ require("bufferline").setup {
     right_mouse_command = "Bdelete! %d",
   }
 }
-
-require('nvim-web-devicons').get_icons()
-
-vim.o.background = "dark"
 
 local nvim_lsp = require('lspconfig')
 local util = require "lspconfig/util"
@@ -84,9 +89,6 @@ function go_org_imports(wait_ms)
   end
 end
 
-vim.cmd([[autocmd BufWritePre *.go lua go_org_imports()]])
-vim.cmd([[autocmd FileType go setlocal omnifunc=v:lua.vim.lsp.omnifunc]])
-
 local cmp = require('cmp')
 
 cmp.setup{
@@ -126,9 +128,3 @@ require("toggleterm").setup{
 require("transparent").setup({
   enable = true,
 })
-
-vim.cmd([[colorscheme gruvbox]])
-vim.cmd([[set expandtab]])
-vim.cmd([[set tabstop=4]])
-vim.cmd([[set shiftwidth=4]])
-vim.cmd([[set number]])
