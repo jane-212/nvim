@@ -6,10 +6,10 @@ my config backup of neovim
 
 ## pre support
 
-    - [packer.nvim](https://github.com/wbthomason/packer.nvim)
+- [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
-    - [gitui.nvim](https://github.com/brneor/gitui.nvim)
+- [gitui.nvim](https://github.com/brneor/gitui.nvim)
 
-    - [ctags](http://ctags.sourceforge.net/)
+- [ctags](http://ctags.sourceforge.net/)
 
-    - [node.js](https://nodejs.org/en/)
+- [node.js](https://nodejs.org/en/)
