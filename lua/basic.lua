@@ -11,4 +11,5 @@ set t_Co=256
 set termguicolors
 set shortmess+=c
 set updatetime=100
+set encoding=utf-8
 ]])
