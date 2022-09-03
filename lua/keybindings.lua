@@ -12,6 +12,8 @@ map("n", "<C-o>", ":q<CR>", opt)
 map("n", "<C-s>", ":w<CR>", opt)
 map("n", "<C-a>", "<C-A>", opt)
 map("n", "<C-x>", "<C-X>", opt)
+map("n", "<C-y>", "\"+y", opt)
+map("n", "<C-p>", "\"+p", opt)
 
 map('n', 'te', ':NvimTreeToggle<CR>', opt)
 map('n', 'tb', ':TagbarToggle<CR>', opt)
@@ -24,9 +26,6 @@ map("n", "ff", ":Telescope find_files<CR>", opt)
 map("n", "fl", ":Telescope live_grep<CR>", opt)
 map("n", "fb", ":Telescope buffers<CR>", opt)
 map("n", "fh", ":Telescope help_tags<CR>", opt)
-
-map("n", "<Leader>y", "\"+y", opt)
-map("n", "<Leader>p", "\"+p", opt)
 
 map("n", "<A-h>", "<C-w>h", opt)
 map("n", "<A-j>", "<C-w>j", opt)
@@ -55,6 +54,10 @@ map("i", "<C-o>", "<ESC>", opt)
 map("v", "<C-o>", "<ESC>", opt)
 
 map("t", "<C-o>", "<C-\\><C-n>", opt)
+map("t", "<A-h>", "<Left>", opt)
+map("t", "<A-j>", "<Down>", opt)
+map("t", "<A-k>", "<Up>", opt)
+map("t", "<A-l>", "<Right>", opt)
 
 vim.cmd([[
 function! CheckBackspace() abort
