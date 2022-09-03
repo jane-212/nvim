@@ -23,26 +23,6 @@ return require('packer').startup(function(use)
     }
   }
 
-  use 'neovim/nvim-lspconfig'
-
-  use 'hrsh7th/nvim-cmp'
-
-  use 'hrsh7th/cmp-nvim-lsp'
-
-  use 'hrsh7th/cmp-vsnip'
-
-  use 'hrsh7th/cmp-path'
-
-  use 'hrsh7th/cmp-buffer'
-
-
-
-  use 'hrsh7th/vim-vsnip'
-
-  use 'nvim-lua/popup.nvim'
-
-  use 'nvim-lua/plenary.nvim'
-
   use 'brneor/gitui.nvim'
 
   use {
@@ -61,9 +41,14 @@ return require('packer').startup(function(use)
 
   use 'preservim/tagbar'
 
-  use 'racer-rust/vim-racer'
-
-  use 'simrat39/rust-tools.nvim'
-
   use 'luochen1990/rainbow'
+
+  use {'neoclide/coc.nvim', branch = 'release'}
+
+  use 'Yggdroot/indentLine'
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 end)
