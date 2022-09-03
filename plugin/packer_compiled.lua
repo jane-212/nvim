@@ -86,6 +86,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   ["gitui.nvim"] = {
     loaded = true,
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitui.nvim",
@@ -95,11 +100,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
-  indentLine = {
-    loaded = true,
-    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indentLine",
-    url = "https://github.com/Yggdroot/indentLine"
   },
   ["lualine.nvim"] = {
     loaded = true,

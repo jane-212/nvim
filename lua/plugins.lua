@@ -1,5 +1,3 @@
-vim.cmd [[packadd packer.nvim]]
-
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
@@ -45,10 +43,10 @@ return require('packer').startup(function(use)
 
   use {'neoclide/coc.nvim', branch = 'release'}
 
-  use 'Yggdroot/indentLine'
-
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+
+  use 'glepnir/dashboard-nvim'
 end)

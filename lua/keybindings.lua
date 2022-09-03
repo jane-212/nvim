@@ -9,6 +9,7 @@ map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
 map("n", "<C-k>", "9k", opt)
 map("n", "<C-j>", "9j", opt)
 map("n", "<C-o>", ":q<CR>", opt)
+map("n", "<C-s>", ":w<CR>", opt)
 
 map('n', 'te', ':NvimTreeToggle<CR>', opt)
 map('n', 'tb', ':TagbarToggle<CR>', opt)
@@ -51,6 +52,11 @@ map("v", "<C-o>", "<ESC>", opt)
 map("t", "<C-o>", "<C-\\><C-n>", opt)
 
 vim.cmd([[
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#next(1): CheckBackspace() ? "\<Tab>" : coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm(): "\<CR>\<c-r>=coc#on_enter()\<CR>"
