@@ -13,3 +13,5 @@ my config backup of neovim
 - [ctags](http://ctags.sourceforge.net/)
 
 - [node.js](https://nodejs.org/en/)
+
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
