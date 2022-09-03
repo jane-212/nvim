@@ -19,7 +19,7 @@ map("n", "fd", ":Bdelete<CR>", opt)
 map("n", "md", ":MarkdownPreview<CR>", opt)
 map("n", "ms", ":MarkdownPreviewStop<CR>", opt)
 map("n", "ff", ":Telescope find_files<CR>", opt)
-map("n", "fg", ":Telescope live_grep<CR>", opt)
+map("n", "fl", ":Telescope live_grep<CR>", opt)
 map("n", "fb", ":Telescope buffers<CR>", opt)
 map("n", "fh", ":Telescope help_tags<CR>", opt)
 
