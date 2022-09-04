@@ -14,7 +14,8 @@ map("n", "<C-a>", "<C-A>", opt)
 map("n", "<C-x>", "<C-X>", opt)
 map("n", "<C-y>", "\"+y", opt)
 map("n", "<C-p>", "\"+p", opt)
-map("n", "<C-s>", ":w<CR>", opt)
+map("n", "<C-n>", ":w<CR>", opt)
+map("n", "<C-b>", "<C-o>", opt)
 
 map('n', 'te', ':NvimTreeToggle<CR>', opt)
 map('n', 'tb', ':TagbarToggle<CR>', opt)
@@ -51,7 +52,7 @@ map("i", "<A-O>", "<ESC>O", opt)
 map("i", "<C-e>", "<ESC>I", opt)
 map("i", "<C-b>", "<ESC>A", opt)
 map("i", "<C-o>", "<ESC>", opt)
-map("i", "<C-s>", "<ESC>:w<CR>", opt)
+map("i", "<C-n>", "<ESC>:w<CR>", opt)
 
 map("v", "fw", "gc", sopt)
 
