@@ -12,4 +12,5 @@ set termguicolors
 set shortmess+=c
 set updatetime=100
 set encoding=utf-8
+autocmd FileType rust, go set commentstring=//\ %s
 ]])
