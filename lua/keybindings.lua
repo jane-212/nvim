@@ -29,6 +29,7 @@ map("n", "fl", ":Telescope live_grep<CR>", opt)
 map("n", "fb", ":Telescope buffers<CR>", opt)
 map("n", "fh", ":Telescope help_tags<CR>", opt)
 map("n", "<CR>", ".", opt)
+map("n", "w", "f", opt)
 map("n", "fw", "gcc", sopt)
 
 map("n", "<A-h>", ":BufferLineCyclePrev<CR>", opt)
