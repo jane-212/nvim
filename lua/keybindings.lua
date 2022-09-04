@@ -4,16 +4,16 @@ vim.g.maplocalleader = ","
 local map = vim.api.nvim_set_keymap
 local opt = {noremap = true, silent = true }
 
-map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
-map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
-map("n", "<C-k>", "9k", opt)
-map("n", "<C-j>", "9j", opt)
+map("n", "<C-h>", "<C-w>h", opt)
+map("n", "<C-j>", "<C-w>j", opt)
+map("n", "<C-k>", "<C-w>k", opt)
+map("n", "<C-l>", "<C-w>l", opt)
 map("n", "<C-o>", ":q<CR>", opt)
 map("n", "<C-s>", ":w<CR>", opt)
 map("n", "<C-a>", "<C-A>", opt)
 map("n", "<C-x>", "<C-X>", opt)
-map("n", "<C-y>", "\"+y", opt)
-map("n", "<C-p>", "\"+p", opt)
+map("n", "<c-y>", "\"+y", opt)
+map("n", "<c-p>", "\"+p", opt)
 
 map('n', 'te', ':NvimTreeToggle<CR>', opt)
 map('n', 'tb', ':TagbarToggle<CR>', opt)
@@ -26,11 +26,12 @@ map("n", "ff", ":Telescope find_files<CR>", opt)
 map("n", "fl", ":Telescope live_grep<CR>", opt)
 map("n", "fb", ":Telescope buffers<CR>", opt)
 map("n", "fh", ":Telescope help_tags<CR>", opt)
+map("n", "fw", "gcc", opt)
 
-map("n", "<A-h>", "<C-w>h", opt)
-map("n", "<A-j>", "<C-w>j", opt)
-map("n", "<A-k>", "<C-w>k", opt)
-map("n", "<A-l>", "<C-w>l", opt)
+map("n", "<A-h>", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<A-l>", ":BufferLineCycleNext<CR>", opt)
+map("n", "<A-k>", "9k", opt)
+map("n", "<A-j>", "9j", opt)
 map("n", "<A-e>", "$", opt)
 map("n", "<A-b>", "0", opt)
 
@@ -51,7 +52,11 @@ map("i", "<C-b>", "<ESC>A", opt)
 map("i", "<C-s>", "<ESC>:w<CR>", opt)
 map("i", "<C-o>", "<ESC>", opt)
 
+map("v", "fw", "gc", opt)
+
 map("v", "<C-o>", "<ESC>", opt)
+map("v", "<c-y>", "\"+y", opt)
+map("v", "<c-p>", "\"+p", opt)
 
 map("t", "<C-o>", "<C-\\><C-n>", opt)
 map("t", "<A-h>", "<Left>", opt)

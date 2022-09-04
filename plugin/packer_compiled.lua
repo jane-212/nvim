@@ -165,6 +165,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
   }
 }
 
