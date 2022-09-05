@@ -1,4 +1,3 @@
-vim.o.dir = 'c:\\Temp'
 vim.o.background = "dark"
 
 vim.cmd([[
@@ -12,4 +11,7 @@ set termguicolors
 set shortmess+=c
 set updatetime=100
 set encoding=utf-8
+set nobackup
+set noswapfile
+set noundofile
 ]])
