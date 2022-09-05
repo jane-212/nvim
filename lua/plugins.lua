@@ -56,4 +56,6 @@ return require('packer').startup(function(use)
   }
 
   use 'tpope/vim-commentary'
+
+  use "Pocco81/auto-save.nvim"
 end)

@@ -5,6 +5,7 @@ require('keybindings')
 require('plugins')
 
 require("lualine").setup()
+require("auto-save").setup()
 require('plugin-config.nvim-tree')
 require('plugin-config.nvim-web-devicons')
 require('plugin-config.bufferline')
