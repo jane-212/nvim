@@ -32,10 +32,10 @@ return require('packer').startup(function(use)
 
   use 'xiyaowong/nvim-transparent'
 
-  use({
+  use{
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
-  })
+  }
 
   use 'preservim/tagbar'
 
@@ -58,4 +58,6 @@ return require('packer').startup(function(use)
   use 'tpope/vim-commentary'
 
   use "Pocco81/auto-save.nvim"
+  
+  use 'nvim-treesitter/nvim-treesitter'
 end)

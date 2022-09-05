@@ -27,7 +27,7 @@ map("n", "ff", ":Telescope find_files<CR>", opt)
 map("n", "fl", ":Telescope live_grep<CR>", opt)
 map("n", "fb", ":Telescope buffers<CR>", opt)
 map("n", "fh", ":Telescope help_tags<CR>", opt)
-map("n", "<CR>", ".", opt)
+map("n", "fm", "gg=G", opt)
 map("n", "<SPACE>", ":", opt)
 map("n", "w", "f", opt)
 map("n", "yw", "yf", opt)
@@ -70,6 +70,10 @@ map("v", "fw", "gc", sopt)
 map("v", "<C-o>", "<ESC>", opt)
 map("v", "<C-y>", "\"+y", opt)
 map("v", "<C-p>", "\"+p", opt)
+map("v", "<C-h>", "4h", opt)
+map("v", "<C-l>", "4l", opt)
+map("v", "<C-k>", "4k", opt)
+map("v", "<C-j>", "4j", opt)
 
 map("t", "<C-o>", "<C-\\><C-n>", opt)
 
@@ -80,8 +84,8 @@ map("t", "<A-l>", "<Right>", opt)
 
 vim.cmd([[
 function! CheckBackspace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~ '\s'
+let col = col('.') - 1
+return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
 
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#next(1): CheckBackspace() ? "\<Tab>" : coc#refresh()
