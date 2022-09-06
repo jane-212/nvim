@@ -14,4 +14,5 @@ set encoding=utf-8
 set nobackup
 set noswapfile
 set noundofile
+set signcolumn=no
 ]])
