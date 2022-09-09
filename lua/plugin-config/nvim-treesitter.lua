@@ -4,7 +4,6 @@ require('nvim-treesitter.configs').setup{
         "rust",
         "json",
         "markdown",
-        "python",
     },
 
     highlight = {
