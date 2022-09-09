@@ -15,4 +15,3 @@ require('plugin-config.rainbow')
 require('plugin-config.coc')
 require('plugin-config.dashboard')
 require('plugin-config.nvim-treesitter')
--- test
