@@ -21,8 +21,6 @@ map('n', 'te', ':NvimTreeToggle<CR>', opt)
 map('n', 'tb', ':TagbarToggle<CR>', opt)
 map("n", "tt", ":ToggleTerm<CR>", opt)
 map("n", "fd", ":Bdelete<CR>", opt)
-map("n", "md", ":MarkdownPreview<CR>", opt)
-map("n", "ms", ":MarkdownPreviewStop<CR>", opt)
 map("n", "ff", ":Telescope find_files<CR>", opt)
 map("n", "fl", ":Telescope live_grep<CR>", opt)
 map("n", "fm", "gg=G", opt)
@@ -88,20 +86,3 @@ map("t", "<A-j>", "<Down>", opt)
 map("t", "<A-k>", "<Up>", opt)
 map("t", "<A-l>", "<Right>", opt)
 
-vim.cmd([[
-function! CheckBackspace() abort
-let col = col('.') - 1
-return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
-
-inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#next(1): CheckBackspace() ? "\<Tab>" : coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm(): "\<CR>\<c-r>=coc#on_enter()\<CR>"
-
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-nmap <silent> gp <Plug>(coc-diagnostic-prev)
-nmap <silent> gn <Plug>(coc-diagnostic-next)
-]])
