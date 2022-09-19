@@ -32,6 +32,11 @@ return require('packer').startup(function(use)
 
     use 'xiyaowong/nvim-transparent'
 
+    use{
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    }
+
     use 'preservim/tagbar'
 
     use 'luochen1990/rainbow'
