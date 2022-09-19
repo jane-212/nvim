@@ -1,13 +1,12 @@
 vim.cmd([[
 colorscheme gruvbox
-set background = dark
-set rainbow_active = 1
 set expandtab
 set tabstop = 4
 set shiftwidth = 4
 set relativenumber
 set number
 set t_Co = 256
+set background = dark
 set termguicolors
 set shortmess += c
 set updatetime = 100
