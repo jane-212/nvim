@@ -7,7 +7,7 @@ vim.opt.number = true
 vim.opt.termguicolors = true
 vim.opt.ignorecase = true
 vim.opt.termguicolors = true
-vim.opt.shortmess = vim.opt.shortmess .. 'c'
+vim.shortmess:append "c"
 vim.opt.updatetime = 100
 vim.opt.encoding = "utf-8"
 vim.opt.nobackup = true
