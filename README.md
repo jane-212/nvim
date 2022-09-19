@@ -8,8 +8,6 @@ my config backup of neovim
 
 - [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
-- [gitui.nvim](https://github.com/brneor/gitui.nvim)
-
 - [ctags](http://ctags.sourceforge.net/)
 
 - [node.js](https://nodejs.org/en/)

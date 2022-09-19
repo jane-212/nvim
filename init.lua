@@ -6,6 +6,8 @@ require('plugins')
 
 require("lualine").setup()
 require("auto-save").setup()
+
+require('plugin-config.gruvbox')
 require('plugin-config.nvim-tree')
 require('plugin-config.nvim-web-devicons')
 require('plugin-config.bufferline')
@@ -15,4 +17,3 @@ require('plugin-config.rainbow')
 require('plugin-config.coc')
 require('plugin-config.dashboard')
 require('plugin-config.nvim-treesitter')
--- test
