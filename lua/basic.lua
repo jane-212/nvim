@@ -15,4 +15,7 @@ set nobackup
 set noswapfile
 set noundofile
 set signcolumn=no
+set syntax=on
+set autoindent
+set cindent
 ]])
