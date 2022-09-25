@@ -17,9 +17,9 @@ local sopt = {silent = true }
 -- map("n", "<C-u>", "<C-o>", opt)
 -- map("n", "<C-s>", "<C-u>", opt)
 
-map('n', 'te', ':NvimTreeToggle<CR>', opt)
-map('n', 'tb', ':TagbarToggle<CR>', opt)
-map("n", "tt", ":ToggleTerm<CR>", opt)
+map('n', 'ge', ':NvimTreeToggle<CR>', opt)
+map('n', 'gb', ':TagbarToggle<CR>', opt)
+map("n", "gt", ":ToggleTerm<CR>", opt)
 map("n", "gj", ":Bdelete<CR>", opt)
 map("n", "gk", ":Telescope find_files<CR>", opt)
 map("n", "gl", ":Telescope live_grep<CR>", opt)
