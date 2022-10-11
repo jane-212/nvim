@@ -4,6 +4,7 @@ require('nvim-treesitter.configs').setup{
         "rust",
         "json",
         "markdown",
+        "vue",
     },
 
     highlight = {
