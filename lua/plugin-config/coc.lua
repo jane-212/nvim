@@ -5,6 +5,7 @@ vim.g.coc_global_extensions = {
     'coc-markdownlint',
     'coc-tabnine',
     'coc-vetur',
+    'coc-sql',
 }
 
 vim.cmd([[

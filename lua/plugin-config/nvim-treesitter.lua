@@ -5,6 +5,7 @@ require('nvim-treesitter.configs').setup{
         "json",
         "markdown",
         "vue",
+        "sql",
     },
 
     highlight = {
