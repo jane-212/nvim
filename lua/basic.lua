@@ -18,4 +18,5 @@ set signcolumn=no
 set syntax=on
 set autoindent
 set cindent
+set scrolloff=5
 ]])
