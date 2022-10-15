@@ -1,10 +1,8 @@
 vim.g.coc_global_extensions = {
     'coc-rust-analyzer',
     'coc-go',
-    'coc-json',
     'coc-markdownlint',
     'coc-tabnine',
-    'coc-vetur',
     'coc-sql',
 }
 

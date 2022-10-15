@@ -2,9 +2,7 @@ require('nvim-treesitter.configs').setup{
     ensure_installed = {
         "go",
         "rust",
-        "json",
         "markdown",
-        "vue",
         "sql",
     },
 
