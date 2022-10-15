@@ -99,11 +99,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
   },
-  ["gitui.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitui.nvim",
-    url = "https://github.com/brneor/gitui.nvim"
-  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
@@ -118,11 +113,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lush.nvim",
     url = "https://github.com/rktjmp/lush.nvim"
-  },
-  ["markdown-preview.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\markdown-preview.nvim",
-    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["nvim-transparent"] = {
     loaded = true,

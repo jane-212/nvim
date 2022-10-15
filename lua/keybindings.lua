@@ -3,7 +3,7 @@
 
 local map = vim.api.nvim_set_keymap
 local opt = { noremap = true, silent = true }
-local sopt = {silent = true }
+-- local sopt = {silent = true }
 
 -- map("n", "<C-h>", "4h", opt)
 -- map("n", "<C-l>", "4l", opt)
@@ -41,12 +41,12 @@ map("n", "gl", ":Telescope live_grep<CR>", opt)
 -- map("n", "di", "diw", opt)
 -- map("n", "ci", "ciw", opt)
 
-map("n", "gwh", "<C-w>h", opt)
-map("n", "gwj", "<C-w>j", opt)
-map("n", "gwk", "<C-w>k", opt)
-map("n", "gwl", "<C-w>l", opt)
-map("n", "gwu", ":BufferLineCyclePrev<CR>", opt)
-map("n", "gwi", ":BufferLineCycleNext<CR>", opt)
+map("n", "<C-h>", "<C-w>h", opt)
+map("n", "<C-j>", "<C-w>j", opt)
+map("n", "<C-k>", "<C-w>k", opt)
+map("n", "<C-l>", "<C-w>l", opt)
+map("n", "<C-p>", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<C-n>", ":BufferLineCycleNext<CR>", opt)
 
 -- map("n", "L", "$", opt)
 -- map("n", "H", "0", opt)
