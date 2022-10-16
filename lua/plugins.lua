@@ -1,12 +1,10 @@
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
-    use {
-        "ellisonleao/gruvbox.nvim",
-        requires = {
-            "rktjmp/lush.nvim",
-        }
-    }
+    use({
+        'glepnir/zephyr-nvim',
+        requires = { 'nvim-treesitter/nvim-treesitter', opt = true },
+    })
 
     use {
         'kyazdani42/nvim-tree.lua',

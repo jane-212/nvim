@@ -1,5 +1,5 @@
 vim.cmd([[
-colorscheme gruvbox
+colorscheme zephyr
 set expandtab
 set tabstop=4
 set shiftwidth=4
