@@ -125,7 +125,7 @@ ins_left {
 ins_left {
     function()
         local time = os.time()
-        return " " .. os.date("%Y-%m-%d", time) .. "  " .. os.date("%H:%M:%S", time)
+        return " " .. os.date("%H:%M:%S", time)
     end,
     color = { fg = colors.blue },
 }
