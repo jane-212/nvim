@@ -28,8 +28,6 @@ return require('packer').startup(function(use)
 
     use 'jiangmiao/auto-pairs'
 
-    use 'xiyaowong/nvim-transparent'
-
     use 'preservim/tagbar'
 
     use 'luochen1990/rainbow'
