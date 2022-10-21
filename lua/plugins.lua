@@ -1,10 +1,7 @@
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
-    use({
-        'glepnir/zephyr-nvim',
-        requires = { 'nvim-treesitter/nvim-treesitter', opt = true },
-    })
+    use 'wadackel/vim-dogrun'
 
     use {
         'kyazdani42/nvim-tree.lua',

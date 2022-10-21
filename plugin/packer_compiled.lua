@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["nvim-transparent"] = {
-    loaded = true,
-    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-transparent",
-    url = "https://github.com/xiyaowong/nvim-transparent"
-  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
@@ -164,10 +159,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
   },
-  ["zephyr-nvim"] = {
+  ["vim-dogrun"] = {
     loaded = true,
-    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\zephyr-nvim",
-    url = "https://github.com/glepnir/zephyr-nvim"
+    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-dogrun",
+    url = "https://github.com/wadackel/vim-dogrun"
   }
 }
 
