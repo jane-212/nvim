@@ -1,7 +1,7 @@
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
-    use 'wadackel/vim-dogrun'
+    use 'morhetz/gruvbox'
 
     use {
         'kyazdani42/nvim-tree.lua',

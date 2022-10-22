@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
   },
+  gruvbox = {
+    loaded = true,
+    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
