@@ -41,6 +41,7 @@ function _G.show_docs()
         vim.api.nvim_command('!' .. vim.o.keywordprg .. ' ' .. cw)
     end
 end
+
 keymap("n", "gh", '<CMD>lua _G.show_docs()<CR>', {silent = true})
 
 vim.api.nvim_create_augroup("CocGroup", {})
@@ -62,8 +63,6 @@ vim.api.nvim_create_autocmd("User", {
 local opts = {silent = true, nowait = true}
 
 keymap("n", "gq", "<Plug>(coc-fix-current)", opts)
-
-local opts = {silent = true, nowait = true, expr = true}
 
 vim.api.nvim_create_user_command("Format", "call CocAction('format')", {})
 

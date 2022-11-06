@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neoscroll.nvim",
+    url = "https://github.com/karb94/neoscroll.nvim"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "C:\\Users\\jjt15\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
