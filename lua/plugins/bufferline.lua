@@ -1,4 +1,9 @@
-require("bufferline").setup {
+local setup, bufferline = pcall(require, "bufferline")
+if not setup then
+    return
+end
+
+bufferline.setup({
     options = {
       offsets = {{
         filetype = "NvimTree",
@@ -10,4 +15,4 @@ require("bufferline").setup {
       close_command = "Bdelete! %d",
       right_mouse_command = "Bdelete! %d",
     }
-}
+})

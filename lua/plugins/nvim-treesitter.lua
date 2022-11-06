@@ -1,9 +1,19 @@
-require('nvim-treesitter.configs').setup{
+local setup, configs = pcall(require, "nvim-treesitter.configs")
+if not setup then
+    return
+end
+
+configs.setup({
     ensure_installed = {
+        "bash",
+        "dockerfile",
         "go",
-        "rust",
+        "gomod",
+        "json",
         "markdown",
+        "rust",
         "sql",
+        "toml",
     },
 
     highlight = {
@@ -24,9 +34,14 @@ require('nvim-treesitter.configs').setup{
     indent = {
         enable = true
     }
-}
+})
 
-require('nvim-treesitter.install').prefer_git = true
+local setup, install = pcall(require, "nvim-treesitter.install")
+if not setup then
+    return
+end
+
+install.prefer_git = true
 
 vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'

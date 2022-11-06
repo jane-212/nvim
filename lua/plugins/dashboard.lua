@@ -1,6 +1,9 @@
-local db = require('dashboard')
+local setup, dashboard = pcall(require, "dashboard")
+if not setup then
+    return
+end
 
-db.custom_header = {
+dashboard.custom_header = {
     ' ', 
     '⠸⣷⣦⠤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⠀⠀⠀ ',
     '⠀⠙⣿⡄⠈⠑⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠔⠊⠉⣿⡿⠁⠀⠀⠀ ',
@@ -19,7 +22,7 @@ db.custom_header = {
     '⠀⠀⠀⠀⠀⠈⠻⠿⠿⠓⠄⠤⠘⠉⠙⠤⢀⠾⠿⣿⠟⠋         '
 }
 
-db.custom_center = {
+dashboard.custom_center = {
 	{
 		icon = " ",
 		desc = "  pikachu~",
