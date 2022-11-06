@@ -16,3 +16,4 @@ bufferline.setup({
       right_mouse_command = "Bdelete! %d",
     }
 })
+

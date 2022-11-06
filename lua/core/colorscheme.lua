@@ -5,3 +5,4 @@ if not status then
     print("Colorscheme gruvbox not found!")
     return
 end
+

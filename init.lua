@@ -12,3 +12,4 @@ require("plugins.nvim-treesitter")
 require("plugins.nvim-web-devicons")
 require("plugins.rainbow")
 require("plugins.toggleterm")
+

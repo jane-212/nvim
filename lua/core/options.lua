@@ -53,3 +53,4 @@ opt.updatetime = 100
 opt.incsearch = true
 opt.encoding = "utf-8"
 opt.showmode = false
+

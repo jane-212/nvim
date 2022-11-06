@@ -6,3 +6,4 @@ end
 toggleterm.setup{
     direction = 'float',
 }
+

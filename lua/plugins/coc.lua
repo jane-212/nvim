@@ -68,3 +68,4 @@ local opts = {silent = true, nowait = true, expr = true}
 vim.api.nvim_create_user_command("Format", "call CocAction('format')", {})
 
 vim.opt.statusline:prepend("%{coc#status()}%{get(b:,'coc_current_function','')}")
+

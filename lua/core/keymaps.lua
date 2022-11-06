@@ -20,3 +20,4 @@ keymap("n", "gsv", ":vsp<CR>", opt)
 keymap("n", "gsh", ":sp<CR>", opt)
 keymap("n", "gsc", "<C-w>c", opt)
 keymap("n", "gso", "<C-w>o", opt)
+

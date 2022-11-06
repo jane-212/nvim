@@ -4,3 +4,4 @@ if not setup then
 end
 
 auto_save.setup()
+

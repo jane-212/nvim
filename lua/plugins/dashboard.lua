@@ -30,3 +30,4 @@ dashboard.custom_center = {
 		action = "",
 	},
 }
+

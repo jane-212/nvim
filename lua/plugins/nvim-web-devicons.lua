@@ -4,3 +4,4 @@ if not setup then
 end
 
 nvim_web_devicons.get_icons()
+
