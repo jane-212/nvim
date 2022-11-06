@@ -19,11 +19,12 @@ opt.smartcase = true
 
 -- cursor line
 opt.cursorline = true
+opt.guicursor = "a:block"
 
 -- appearance
 opt.termguicolors = true
 opt.background = "dark"
-opt.signcolumn = "yes"
+opt.signcolumn = "no"
 
 -- backspace
 opt.backspace = "indent,eol,start"
@@ -49,3 +50,5 @@ opt.cindent = true
 
 opt.scrolloff = 5
 opt.updatetime = 100
+opt.incsearch = true
+opt.encoding = "utf-8"

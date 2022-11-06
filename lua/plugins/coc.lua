@@ -10,11 +10,6 @@ vim.g.coc_global_extensions = {
     "coc-toml",
 }
 
-local setup, _ = pcall(require, "coc")
-if not setup then
-    return
-end
-
 local keymap = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true, expr = true, replace_keycodes = false }
 
