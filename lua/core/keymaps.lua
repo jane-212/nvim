@@ -2,7 +2,8 @@ local keymap = vim.api.nvim_set_keymap
 local opt = { noremap = true, silent = true }
 
 keymap('n', 'ge', ':NvimTreeToggle<CR>', opt)
-keymap('n', 'gb', ':TagbarToggle<CR>', opt)
+keymap('n', 'gv', ':Vista!!<CR>', opt)
+keymap('n', 'gb', ':Goyo<CR>', opt)
 keymap("n", "gt", ":ToggleTerm<CR>", opt)
 keymap("n", "gj", ":Bdelete<CR>", opt)
 keymap("n", "gf", ":Format<CR>", opt)

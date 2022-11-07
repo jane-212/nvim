@@ -8,8 +8,6 @@ my config backup of neovim
 
 - [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
-- [ctags](http://ctags.sourceforge.net/)
-
 - [node.js](https://nodejs.org/en/)
 
 - [ripgrep](https://github.com/BurntSushi/ripgrep)

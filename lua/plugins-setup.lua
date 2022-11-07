@@ -20,8 +20,6 @@ return packer.startup(function(use)
 
     use("jiangmiao/auto-pairs")
 
-    use("preservim/tagbar")
-
     use("luochen1990/rainbow")
 
     use({"neoclide/coc.nvim", branch = "release"})
@@ -39,5 +37,13 @@ return packer.startup(function(use)
     use("Pocco81/auto-save.nvim")
 
     use("nvim-treesitter/nvim-treesitter")
+
+    use("lewis6991/gitsigns.nvim")
+
+    use("liuchengxu/vista.vim")
+
+    use("junegunn/goyo.vim")
+    
+    use("lewis6991/impatient.nvim")
 end)
 

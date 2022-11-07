@@ -24,7 +24,7 @@ opt.guicursor = "a:block"
 -- appearance
 opt.termguicolors = true
 opt.background = "dark"
-opt.signcolumn = "no"
+opt.signcolumn = "yes"
 
 -- backspace
 opt.backspace = "indent,eol,start"
