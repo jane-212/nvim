@@ -9,11 +9,14 @@ bufferline.setup({
         filetype = "NvimTree",
         text = "Workspace",
         highlight = "Directory",
-        text_align = "left"
+        text_align = "center",
+        separator = false,
       }},
-  
+      indicator = {
+        style = "underline",
+      },
       close_command = "Bdelete! %d",
-      right_mouse_command = "Bdelete! %d",
+      diagnostics = "coc",
     }
 })
 
