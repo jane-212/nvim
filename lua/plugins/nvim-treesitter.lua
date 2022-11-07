@@ -10,6 +10,7 @@ configs.setup({
         "go",
         "gomod",
         "json",
+        "lua",
         "markdown",
         "rust",
         "sql",
