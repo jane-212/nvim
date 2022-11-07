@@ -45,5 +45,7 @@ return packer.startup(function(use)
     use("junegunn/goyo.vim")
     
     use("lewis6991/impatient.nvim")
+
+    use("phaazon/hop.nvim")
 end)
 

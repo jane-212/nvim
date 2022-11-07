@@ -3,6 +3,7 @@ local opt = { noremap = true, silent = true }
 
 keymap('n', 'ge', ':NvimTreeToggle<CR>', opt)
 keymap('n', 'gv', ':Vista!!<CR>', opt)
+keymap('n', 'gw', ':HopAnywhere<CR>', opt)
 keymap('n', 'gb', ':Goyo<CR>', opt)
 keymap("n", "gt", ":ToggleTerm<CR>", opt)
 keymap("n", "gj", ":Bdelete<CR>", opt)
