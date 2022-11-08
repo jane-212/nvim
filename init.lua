@@ -14,5 +14,6 @@ require("plugins.nvim-tree")
 require("plugins.nvim-treesitter")
 require("plugins.nvim-web-devicons")
 require("plugins.rainbow")
+require("plugins.scrollbar")
 require("plugins.toggleterm")
 
