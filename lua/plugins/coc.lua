@@ -1,4 +1,5 @@
 vim.g.coc_global_extensions = {
+    "coc-clangd",
     "coc-diagnostic",
     "coc-docker",
     "coc-go",

@@ -6,6 +6,8 @@ end
 configs.setup({
     ensure_installed = {
         "bash",
+        "c",
+        "cpp",
         "dockerfile",
         "go",
         "gomod",
