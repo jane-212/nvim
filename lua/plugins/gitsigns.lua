@@ -3,4 +3,10 @@ if not setup then
     return
 end
 
-gitsigns.setup()
+gitsigns.setup({
+  numhl = true,
+  current_line_blame = true,
+  current_line_blame_opts = {
+    delay = 0
+  }
+})
