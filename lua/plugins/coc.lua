@@ -7,7 +7,6 @@ vim.g.coc_global_extensions = {
     "coc-rust-analyzer",
     "coc-sh",
     "coc-sql",
-    "coc-tabnine",
     "coc-toml",
 }
 
