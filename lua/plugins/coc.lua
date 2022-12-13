@@ -7,7 +7,7 @@ vim.g.coc_global_extensions = {
     "coc-rust-analyzer",
     "coc-sh",
     "coc-sql",
-    "coc-toml",
+    "coc-toml"
 }
 
 local keymap = vim.api.nvim_set_keymap

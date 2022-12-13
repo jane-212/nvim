@@ -10,13 +10,13 @@ bufferline.setup({
         text = "Workspace",
         highlight = "Directory",
         text_align = "center",
-        separator = false,
+        separator = false
       }},
       indicator = {
-        style = "underline",
+        style = "underline"
       },
       close_command = "Bdelete! %d",
-      diagnostics = "coc",
+      diagnostics = "coc"
     }
 })
 

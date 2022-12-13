@@ -49,5 +49,7 @@ return packer.startup(function(use)
     use("phaazon/hop.nvim")
 
     use("petertriho/nvim-scrollbar")
+
+    use("xiyaowong/nvim-transparent")
 end)
 

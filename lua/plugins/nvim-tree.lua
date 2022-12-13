@@ -12,9 +12,9 @@ nvim_tree.setup({
       signcolumn = "no",
       mappings = {
             list = {
-                { key = "<C-k>", action = "" },
-            },
-      },
-    }, 
+                { key = "<C-k>", action = "" }
+            }
+      }
+    }
 })
 

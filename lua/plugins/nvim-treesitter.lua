@@ -16,7 +16,7 @@ configs.setup({
         "markdown",
         "rust",
         "sql",
-        "toml",
+        "toml"
     },
 
     highlight = {
@@ -30,7 +30,7 @@ configs.setup({
             init_selection = '<CR>',
             node_incremental = '<CR>',
             node_decremental = '<BS>',
-            scope_incremental = '<TAB>',
+            scope_incremental = '<TAB>'
         }
     },
 

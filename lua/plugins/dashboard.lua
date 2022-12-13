@@ -27,7 +27,7 @@ dashboard.custom_center = {
 		icon = " ",
 		desc = "  pikachu~",
 		shortcut = "",
-		action = "",
-	},
+		action = ""
+	}
 }
 
