@@ -51,5 +51,10 @@ return packer.startup(function(use)
     use("petertriho/nvim-scrollbar")
 
     use("xiyaowong/nvim-transparent")
+
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
 end)
 

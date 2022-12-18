@@ -50,7 +50,7 @@ vim.api.nvim_create_autocmd("CursorHold", {
     desc = "Highlight symbol under cursor on CursorHold"
 })
 
-keymap("n", "gm", "<Plug>(coc-rename)", {silent = true})
+keymap("n", "gz", "<Plug>(coc-rename)", {silent = true})
 
 vim.api.nvim_create_autocmd("User", {
     group = "CocGroup",
