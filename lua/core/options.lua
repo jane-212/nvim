@@ -62,3 +62,11 @@ opt.encoding = "utf-8"
 opt.showmode = false
 opt.mouse = ""
 
+local api = vim.api
+
+-- fix bug treesitter
+api.nvim_create_autocmd({ "BufEnter" }, {
+    pattern = { "*" },
+    command = "normal zx",
+})
+
