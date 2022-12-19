@@ -48,6 +48,13 @@ opt.writebackup = false
 opt.syntax = "on"
 opt.cindent = true
 
+-- fold
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldenable = false
+opt.foldlevel = 99
+
+-- other
 opt.scrolloff = 5
 opt.updatetime = 100
 opt.incsearch = true
