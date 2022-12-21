@@ -9,16 +9,15 @@ vim.g.loaded_netrwPlugin = 1
 nvim_tree.setup({
     view = {
       hide_root_folder = true,
-      signcolumn = "no",
       mappings = {
             list = {
                 { key = "<C-k>", action = "" }
             }
-      },
-      diagnostics = {
-        enable = true,
-        show_on_dirs = true
       }
+    },
+    diagnostics = {
+      enable = true,
+      show_on_dirs = true
     }
 })
 
