@@ -15,7 +15,6 @@ bufferline.setup({
       indicator = {
         style = "none"
       },
-      close_command = "Bdelete! %d",
       diagnostics = "coc"
     }
 })
