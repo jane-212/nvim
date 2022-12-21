@@ -14,6 +14,10 @@ nvim_tree.setup({
             list = {
                 { key = "<C-k>", action = "" }
             }
+      },
+      diagnostics = {
+        enable = true,
+        show_on_dirs = true
       }
     }
 })
