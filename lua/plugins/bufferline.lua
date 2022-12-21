@@ -13,7 +13,7 @@ bufferline.setup({
         separator = false
       }},
       indicator = {
-        style = "underline"
+        style = "none"
       },
       close_command = "Bdelete! %d",
       diagnostics = "coc"
