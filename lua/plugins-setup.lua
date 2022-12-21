@@ -22,7 +22,10 @@ return packer.startup(function(use)
 
     use("luochen1990/rainbow")
 
-    use({"neoclide/coc.nvim", branch = "release"})
+    use({
+        "neoclide/coc.nvim",
+        branch = "release"
+    })
 
     use("nvim-lualine/lualine.nvim")
 
@@ -54,7 +57,7 @@ return packer.startup(function(use)
 
     use({
         "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
+        run = function() vim.fn["mkdp#util#install"]() end
     })
 end)
 
