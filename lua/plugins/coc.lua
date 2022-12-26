@@ -3,6 +3,7 @@ vim.g.coc_global_extensions = {
     "coc-docker",
     "coc-go",
     "coc-json",
+    "coc-pyright",
     "coc-rust-analyzer",
     "coc-sh",
     "coc-sql",

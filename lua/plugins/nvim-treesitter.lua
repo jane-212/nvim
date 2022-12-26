@@ -16,6 +16,7 @@ configs.setup({
         "lua",
         "make",
         "markdown",
+        "python",
         "rust",
         "sql",
         "toml"
