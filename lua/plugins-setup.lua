@@ -24,7 +24,7 @@ return packer.startup(function(use)
 
     use({
         "neoclide/coc.nvim",
-        branch = "release"
+        branch = "release",
     })
 
     use("nvim-lualine/lualine.nvim")
@@ -57,7 +57,9 @@ return packer.startup(function(use)
 
     use({
         "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end
+        run = function() vim.fn["mkdp#util#install"]() end,
     })
+
+    use("saecki/crates.nvim")
 end)
 
