@@ -18,6 +18,5 @@ require("plugins.nvim-web-devicons")
 require("plugins.rainbow")
 require("plugins.scrollbar")
 require("plugins.toggleterm")
-require("plugins.transparent")
 require("plugins.vista")
 
